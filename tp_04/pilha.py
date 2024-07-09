@@ -1,7 +1,5 @@
 import unittest
 
-import unittest.test
-
 class Pilha:
     def __init__(self) -> None:
         self.items = []
