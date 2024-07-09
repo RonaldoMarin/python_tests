@@ -1,8 +1,5 @@
 import unittest
-
-def convert_celsius_to_fahrenheit(celsius:float) -> float : 
-    fahrenheit = celsius * (9/5) + 32
-    return fahrenheit
+from conversao_temperatura import convert_celsius_to_fahrenheit
 
 class TestTemperatureConversion(unittest.TestCase):
     def test_celsius_to_fahrenheit(self):
