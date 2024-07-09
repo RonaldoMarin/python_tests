@@ -6,13 +6,13 @@ def busca_binaria(lista:list, elemento:int) -> bool:
     while esquerda <= direita:
         meio = (esquerda + direita) // 2
         if lista[meio] == elemento:
-            return meio  # Elemento encontrado, retorna o índice
+            return meio  
         elif lista[meio] < elemento:
-            esquerda = meio + 1  # Ignora a metade esquerda
+            esquerda = meio + 1  
         else:
-            direita = meio - 1  # Ignora a metade direita
+            direita = meio - 1  
     
-    return -1  # Elemento não encontrado
+    return -1  
 
 class TesteBuscaBinaria(unittest.TestCase):
     def test_encontrado(self):
